@@ -1,0 +1,249 @@
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: burlywood;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .logo img {
+    width: 50px;
+    margin-right: 10px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+nav {
+    background-color: maroon;
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+
+/* Hero section styling */
+#hero {
+    position: relative;
+    background: url('Images/hero\ photo.jpg') no-repeat center center/cover;
+    padding: 250px 50px;
+    text-align: center;
+    color: white;
+}
+
+#hero .hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+#hero:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Optional: Add a dark overlay */
+    z-index: 1;
+}
+
+#hero h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+#hero h3 {
+    font-size: 1.5em;
+    color: #ddd;
+}
+
+/* Mission section */
+#mission {
+    padding: 60px;
+}
+
+#mission .section-content {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#mission img {
+    width: 250px;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 8px;
+}
+
+#mission div {
+    flex: 1;
+}
+
+#mission h2 {
+    margin-top: 0;
+}
+
+#mission p {
+    margin: 0 0 10px;
+}
+
+/* Activities section */
+#activities {
+    padding: 20px;
+}
+
+#activities h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.activity-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.activity-item img {
+    width: 250px;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 8px;
+}
+
+.activity-content {
+    flex: 1;
+}
+
+.activity-content h3 {
+    margin-top: 0;
+}
+
+.activity-content p {
+    margin: 0;
+}
+
+/* More section */
+#more {
+    padding: 20px;
+    border-top: 1px solid #ccc;
+    margin-top: 20px;
+}
+
+#more h2 {
+    text-align: center;
+}
+
+#more ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+#more li {
+    margin: 10px 0;
+}
+
+#more a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#more a:hover {
+    text-decoration: underline;
+}
+
+/* Footer section */
+footer {
+    background-color:burlywood;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer .footer-icon {
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+footer p {
+    margin: 10px 0 0;
+    font-size: 0.9em;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .activity-item,
+    #mission .section-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .activity-item img,
+    #mission img {
+        margin: 0 0 20px 0;
+        width: 100%;
+    }
+
+    .activity-content,
+    #mission div {
+        text-align: left;
+    }
+}
